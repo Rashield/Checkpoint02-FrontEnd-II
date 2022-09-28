@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space ToDo | Outerspace Organization</title>
+    <link rel="stylesheet" href="./css/tasks.css">
+    <script src="./js/script.js" defer></script>
+    <script src="./js/tasks.js" defer></script>
+</head>
+<body>
+    <header id="header-container">
+        <a href="./index.html">
+            <img src="./assets/logo.svg" alt="Logo Space To-do" class="logo-img">
+        </a>
+        <nav class="header-menu">
+            <ul>
+                <li class="header-menu-list-item" id="header-menu-register">
+                    <a id="user-profile-button" onclick="openProfile()">
+                        <img src="./assets/pic-placeholder.svg" alt="Perfil de Usuário">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="workspace">
+            <div class="pending-list-area">
+                <div class="list-title">
+                    <p>PENDENTES</p>
+                    <ul>
+                        <li><a id="task-add">+</a></li>
+                        <li>
+                            <a class="arrow-bars list-expand">
+                                <div class="expand-bars bar1"></div>
+                                <div class="expand-bars bar2"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="pending-list">
+                </div>
+            </div>
+            <div class="done-list-area">
+                <div class="list-title">
+                    <p>CONCLUÍDAS</p>
+                    <ul>
+                        <li>
+                            <a class="arrow-bars list-expand">
+                                <div class="expand-bars bar1"></div>
+                                <div class="expand-bars bar2"></div>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="done-list">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Todos os direitos reservados à Space To-do Inc. | Front-end II</p>
+    </footer>
+</body>
+</html>
